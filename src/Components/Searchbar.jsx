@@ -17,6 +17,9 @@ const Searchbar = () => {
 
   const dispatch = useDispatch();
 
+  // SearchVal
+  const [SearchVal, setSearchVal] = useState("");
+
   useEffect(() => {
     if (location.pathname.includes("collection")) {
       setIsVisible(true);
@@ -38,10 +41,15 @@ const Searchbar = () => {
           placeholder="Search"
           onChange={(e) => {
             const value = e.target.value;
-            dispatch(searchActions.setSearch(value));
+            setSearchVal(value);
           }}
         />
-        <span className="search-icon fs-3">
+        <span
+          className="search-icon fs-3"
+          onClick={() => {
+            dispatch(searchActions.setSearch(SearchVal));
+          }}
+        >
           <IoSearch />
         </span>
         <div className="close-icons">
