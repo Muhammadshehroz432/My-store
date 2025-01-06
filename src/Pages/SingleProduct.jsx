@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 
-import "../Styles/Singleproduct.css";
+import "../Styles/SingleProduct.css";
 import { FaStar } from "react-icons/fa6";
 import { FaStarHalf } from "react-icons/fa6";
 
