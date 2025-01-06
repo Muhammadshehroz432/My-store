@@ -6,7 +6,7 @@ const About = () => {
       <div className="container  ">
         <div className="row ">
           <div className="col-lg-6 col-md-6 col-sm-12 image-wrapper ">
-            <img src="../public/assets/about_img.png" alt="" />
+            <img src="/assets/about_img.png" alt="" />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12 text-wrapper p-5  ">
             <h1 className="fw-bold ">About us </h1>

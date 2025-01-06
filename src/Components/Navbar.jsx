@@ -6,7 +6,7 @@ import "../Styles/Navbar.css";
 import { Link, NavLink } from "react-router-dom";
 
 import { searchActions } from "../Store/Search";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -37,6 +37,9 @@ const Navbar = () => {
     }
     return count;
   };
+
+  // dispatch
+  const dispatch = useDispatch();
 
   return (
     <>

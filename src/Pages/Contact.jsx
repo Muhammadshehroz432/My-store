@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="container">
         <div className="row  p-3 ">
           <div className="col-lg-6 col-md-6 col-sm-12 image-wrapper ">
-            <img src="../public/assets/contact_img.png" alt="contact-png" />
+            <img src="/assets/contact_img.png" alt="contact-png" />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12 text-wrapper p-5   ">
             <h1 className="fw-bold ">Contact us </h1>

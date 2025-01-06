@@ -5,54 +5,55 @@ import { IoSearch } from "react-icons/io5";
 import { useDispatch, useSelector } from "react-redux";
 import { searchActions } from "../Store/Search";
 import { useLocation } from "react-router-dom";
-const Searchbar = () => {
-  const ToggleSearch = useSelector((store) => store.search);
 
-  const ToggleSearchbar = ToggleSearch.showSearch;
-  const Location = useLocation();
+const Searchbar = () => {
+  const location = useLocation();
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Toggle Searchbar
+  const searchbarSlice = useSelector((store) => store.search);
+  const toggleSearchbar = searchbarSlice.showSearch;
+
   const dispatch = useDispatch();
-  const [visible, setvisible] = useState(false);
 
   useEffect(() => {
-    if (Location.pathname.includes("collection")) {
-      setvisible(true);
+    if (location.pathname.includes("collection")) {
+      setIsVisible(true);
     } else {
-      setvisible(false);
+      setIsVisible(false);
     }
-  }, [Location]);
+  }, [location]);
 
   return (
-    <>
-      <div
-        className={`search-wrapper ${
-          ToggleSearchbar && visible ? `d-block` : `d-none`
-        } `}
-      >
-        <div className=" search-input p-4">
-          <input
-            onChange={(e) => {
-              console.log(dispatch(searchActions.setSearch(e.target.value)));
-            }}
-            type="text"
-            className="search-bar"
-            placeholder="Search"
-          />
-          <span className="search-icon fs-3">
-            <IoSearch />
+    <div
+      className={`${
+        toggleSearchbar && isVisible ? "d-block" : "d-none"
+      } search-wrapper`}
+    >
+      <div className="search-input p-4">
+        <input
+          type="text"
+          className="search-bar"
+          placeholder="Search"
+          onChange={(e) => {
+            const value = e.target.value;
+            dispatch(searchActions.setSearch(value));
+          }}
+        />
+        <span className="search-icon fs-3">
+          <IoSearch />
+        </span>
+        <div className="close-icons">
+          <span
+            onClick={() => dispatch(searchActions.CloseSearch())}
+            className="fs-3"
+          >
+            <IoMdClose />
           </span>
-          <div className="close-icons">
-            <span
-              className="fs-3"
-              onClick={() => {
-                dispatch(searchActions.CloseSearch());
-              }}
-            >
-              <IoMdClose />
-            </span>
-          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
