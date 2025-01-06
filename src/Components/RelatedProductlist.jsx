@@ -1,7 +1,7 @@
 import React from "react";
 import Product from "./Product";
 import { useDispatch, useSelector } from "react-redux";
-import "../Styles/Singleproduct.css";
+import "../Styles/SingleProduct.css";
 
 const RelatedProductlist = ({ product }) => {
   const ProductCollection = useSelector((store) => store.items);
