@@ -1,0 +1,18 @@
+.BestSeller-products {
+  gap: 5rem;
+}
+
+/* MOBILE SCREEN */
+@media only screen and (max-width: 768px) {
+  .BestSeller-products {
+    margin-left: -2rem;
+  }
+}
+
+/* TABLET SCREEN  */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .BestSeller-products {
+    gap: 9rem;
+    margin-left: -3rem;
+  }
+}

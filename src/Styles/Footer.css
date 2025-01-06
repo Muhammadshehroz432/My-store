@@ -1,0 +1,27 @@
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+
+  gap: 2rem;
+  border-top: 1px solid black;
+}
+
+.footer-logo P {
+  text-align: start;
+}
+.company h5 {
+  text-align: start;
+}
+.company li {
+  list-style: none;
+}
+.get-in h5 {
+  text-align: start;
+}
+.get-in li {
+  list-style: none;
+  text-wrap: wrap;
+}
+.footer-rights {
+  border-top: 1px solid black;
+}

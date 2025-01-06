@@ -1,0 +1,326 @@
+.cart-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cart-wrapper {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.cart-detail {
+  display: flex;
+  align-items: start;
+  position: relative;
+}
+.cart-image {
+  width: 7vw;
+}
+.cart-name {
+  width: 48%;
+  margin-top: 1rem;
+  position: relative;
+  left: 1rem;
+}
+.cart-price-size {
+  width: 28%;
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+  position: absolute;
+  top: 5rem;
+  left: 28%;
+  font-size: 1.2rem;
+}
+.size {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+.cart-quantity {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4%;
+  font-size: 1.4rem;
+}
+.cart-icon {
+  width: 4%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-product-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart-total {
+  width: 40vw;
+  height: auto;
+
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.sub-total {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1rem;
+  font-size: 1.2rem;
+  border-bottom: 1px solid black;
+}
+.shipping-fee {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1rem;
+  font-size: 1.2rem;
+  border-bottom: 1px solid black;
+}
+.total {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1rem;
+  font-size: 1.2rem;
+  border-bottom: 1px solid black;
+}
+.proceed-checkout {
+  padding: 1rem;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+}
+.proceed-checkout a {
+  text-decoration: none;
+  color: white;
+}
+/* TABLET SCREEN  */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .cart-heading {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .cart-wrapper {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+  .cart-detail {
+    display: flex;
+    align-items: start;
+    position: relative;
+  }
+  .cart-image {
+    width: 11vw;
+  }
+  .cart-name {
+    width: 46%;
+  }
+  .cart-name h5 {
+    font-size: 1rem;
+  }
+  .cart-price-size {
+    width: 40%;
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    position: absolute;
+    top: 4rem;
+    left: 28%;
+  }
+  .cart-price-size p {
+    font-size: 1rem;
+  }
+  .size {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+  }
+  .size span {
+    font-size: 1rem;
+  }
+  .cart-quantity {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4%;
+    font-size: 1.4rem;
+  }
+  .cart-icon {
+    width: 4%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cart-product-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 12vh;
+  }
+
+  .cart-total {
+    width: 40vw;
+    height: auto;
+
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+  .sub-total {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid black;
+  }
+  .shipping-fee {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid black;
+  }
+  .total {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid black;
+  }
+}
+
+/* MOBILE SCREEN */
+@media only screen and (max-width: 768px) {
+  .cart-heading {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .cart-wrapper {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 1rem 0rem;
+  }
+  .cart-detail {
+    display: flex;
+    align-items: start;
+    position: relative;
+    top: 0rem;
+  }
+  .cart-image {
+    width: 21vw;
+  }
+  .cart-name {
+    width: 46%;
+  }
+  .cart-name h5 {
+    font-size: 1rem;
+  }
+  .cart-price-size {
+    width: 40%;
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    position: absolute;
+    left: 34%;
+  }
+  .cart-price-size p {
+    font-size: 1rem;
+  }
+  .size {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+  }
+  .size span {
+    font-size: 1rem;
+  }
+  .cart-quantity {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9%;
+    font-size: 1.4rem;
+    position: relative;
+    left: -17%;
+  }
+  .cart-icon {
+    width: 4%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cart-product-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0rem;
+    height: 24vh;
+  }
+
+  .cart-total {
+    width: 85vw;
+    height: auto;
+
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+  .sub-total {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid black;
+  }
+  .shipping-fee {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid black;
+  }
+  .total {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid black;
+  }
+  .proceed-checkout {
+    font-size: 1rem;
+  }
+}

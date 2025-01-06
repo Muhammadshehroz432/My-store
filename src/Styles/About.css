@@ -1,0 +1,36 @@
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper img {
+  width: 34vw;
+}
+.why-choose-card {
+  padding: 2rem;
+  border: 0.5px solid black;
+}
+
+/* TABLET SCREEN  */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .image-wrapper img {
+    width: 48vw;
+  }
+  .text-wrapper p {
+    font-size: 0.6rem;
+  }
+  .why-choose-card {
+    padding: 0.7rem;
+  }
+  .why-choose-card p {
+    font-size: 0.6rem;
+  }
+}
+
+/* MOBILE SCREEN */
+@media only screen and (max-width: 768px) {
+  .image-wrapper img {
+    width: 77vw;
+  }
+}

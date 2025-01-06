@@ -1,0 +1,148 @@
+.order-product-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.image-detail-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.wrapper {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.order-image {
+  width: 8vw;
+}
+h6 {
+  font-size: 0.8rem;
+}
+.order-placed-wrapper {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.order-placed {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem;
+}
+.green-dot {
+  width: 10px;
+  height: 9px;
+  background-color: green;
+  border-radius: 50%;
+  position: relative;
+  top: -4px;
+}
+.track-order {
+  border: 1px solid black;
+  display: flex;
+}
+
+/* TABLET SCREEN  */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .order-product-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .image-detail-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .order-image {
+    width: 16vw;
+  }
+  h6 {
+    font-size: 0.7rem;
+  }
+  .order-placed-wrapper {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.2rem;
+  }
+  .order-placed {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  .green-dot {
+    width: 7px;
+    height: 6px;
+    background-color: green;
+    border-radius: 50%;
+    position: relative;
+    top: -4px;
+  }
+  .track-order {
+    border: 1px solid black;
+    display: flex;
+  }
+}
+
+/* MOBILE SCREEN */
+@media only screen and (max-width: 768px) {
+  .order-product-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .image-detail-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .order-image {
+    width: 16vw;
+  }
+  h6 {
+    font-size: 0.4rem;
+  }
+  .order-placed-wrapper {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .order-placed {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  .green-dot {
+    width: 7px;
+    height: 6px;
+    background-color: green;
+    border-radius: 50%;
+    position: relative;
+    top: -4px;
+  }
+  .track-order {
+    border: 1px solid black;
+    display: flex;
+  }
+}

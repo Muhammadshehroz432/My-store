@@ -1,0 +1,63 @@
+/* CATEGORIES CSS */
+
+.categories-wrapper h5 {
+  text-align: start;
+}
+.categories-wrapper {
+  border: 2px solid black;
+  width: 100%;
+}
+.type-wrapper h5 {
+  text-align: start;
+}
+.type-wrapper {
+  border: 2px solid black;
+  width: 100%;
+}
+.filter-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-icons {
+  transition: transform 0.3s ease; /* Smooth rotation */
+}
+
+.rotate-down {
+  transform: rotate(90deg); /* Rotate icon downward */
+}
+.product-sort {
+  position: relative;
+  left: -1%;
+}
+
+/* MOBILE SCREEN */
+@media only screen and (max-width: 768px) {
+  .collection-wrapper {
+    position: relative;
+    left: 17%;
+  }
+  .filter-wrapper {
+    padding: 1rem;
+  }
+  .filter-heading {
+    margin-bottom: 1rem;
+  }
+  .product-sort {
+    left: 0%;
+  }
+}
+
+/* TABLET SCREEN  */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .collection-wrapper {
+    position: relative;
+    left: 6%;
+    display: flex;
+    gap: 2rem;
+  }
+  .product-sort {
+    left: 0%;
+  }
+}

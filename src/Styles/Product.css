@@ -1,0 +1,39 @@
+.card img {
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+.latest-products {
+  display: flex;
+  position: relative;
+  left: 1rem;
+}
+
+/* MOBILE SCREEN */
+@media only screen and (max-width: 768px) {
+  .latest-products {
+    position: relative;
+    left: 1rem;
+  }
+  .product {
+    position: relative;
+    left: -1rem;
+  }
+}
+
+/* TABLET SCREEN  */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .product {
+    margin-left: 1.5rem;
+  }
+  .latest-products {
+    position: relative;
+    left: -5.5rem;
+    gap: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
